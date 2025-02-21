@@ -1,0 +1,189 @@
+
+/* Generic stuff */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter.ttc') format('ttc'),
+}
+
+*{
+    font-family: Inter;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+.xs-text-size {
+    font-size: 14px;
+}
+
+.lg-text-size {
+    font-size: 30px;
+}
+
+.xl-text-size {
+    font-size: 60px;
+}
+
+.xs-bold {
+    font-weight: 300;
+}
+.sm-bold {
+    font-weight: 400;
+}
+.md-bold {
+    font-weight: 500;
+}
+.lg-bold {
+    font-weight: 600;
+}
+.xl-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.white-font {
+    color: #FFFFFF;
+}
+.yellow-font {
+    color: #F2BB32;
+}
+.dark-1-font {
+    color: #333333;
+}
+.dark-2-font {
+    color: #000000;
+}
+
+.bg-white {
+    background-color: #FCFCFC;
+}
+
+.bg-purple {
+    background-color: #762BDB;
+
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.auto-margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-logo {
+    width: 55px;
+    height: 55px;
+}
+
+.full-screen {
+    height: 100vh;
+}
+
+.fit {
+    width: fit-content;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.self-end {
+    align-self: end;
+}
+
+/* Generic stuff */
+
+
+/* About us stuff */
+
+.about-container {
+    display: grid;
+    grid-template-columns: minmax(auto,438px) minmax(auto,438px)  auto;
+    gap: 25px;
+}
+
+.about-container .pill-button {
+    border-radius: 145px;
+    background-color: #FAC527;
+    width: fit-content;
+    padding: 14px 5px;
+}
+
+.about-container .card-container {
+    background-color: #6727BD;
+    padding: 24px 22px;
+    border-radius: 24px;
+    max-width: 438px;
+}
+
+.about-container .contact-card-container {
+    border-radius: 24px;
+    padding: 24px 24px;
+}
+
+.about-container .contact-card-container h6{
+    line-height: 19px;
+}
+
+.about-container .policy-card-container {
+    margin-top: 26px;
+    border-radius: 26px;
+    padding: 48px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+}
+
+.about-container .whatsapp-card {
+    width: fit-content;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 33px;
+    padding-bottom: 65px;
+    border-radius: 13px;
+}
+
+.about-container .social-medias-card {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 24px;
+    border-radius: 24px;
+}
+
+.about-container .logos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* About us stuff */
