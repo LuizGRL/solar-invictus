@@ -23,6 +23,9 @@ h1,h2,h3,h4,h5,h6,p {
 .xs-text-size {
     font-size: 14px;
 }
+.sm-text-size {
+    font-size: 18px;
+}
 
 .lg-text-size {
     font-size: 30px;
@@ -117,12 +120,40 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Generic stuff */
 
+/* Comments stuff */
+.orange-box {
+    width: 790px;
+    height: 389px;
+    background-color: #FAC527;
+    border-radius: 10px;
+    z-index: 1s;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.comments-container {
+    margin-top: auto;
+    padding-bottom: 65px;
+}
+
+.person-info-container {
+    display: flex;
+    margin-top: 21px;
+}
+.person-info-container img {
+    margin-right: 16px !important;
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+}
+
+/* Comments stuff */
 
 /* About us stuff */
 
 .about-container {
     display: grid;
-    grid-template-columns: minmax(auto,438px) minmax(auto,438px)  auto;
+    grid-template-columns: minmax(auto,438px) minmax(auto,438px) auto;
     gap: 25px;
 }
 
@@ -185,5 +216,33 @@ h1,h2,h3,h4,h5,h6,p {
     gap: 25px;
 }
 
-
 /* About us stuff */
+
+/* Swiper js */
+.swiper-container {
+    width: 400px;
+    height: 300px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    border: 0px !important;
+    border-color: #FCFCFC;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    box-sizing: border-box;
+    position: relative; 
+    z-index: 2; 
+    margin-bottom: 50px; 
+    width: 382px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FAC527 !important;
+}
+
+/* Swiper js */
+
