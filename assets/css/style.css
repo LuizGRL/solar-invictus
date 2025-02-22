@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6,p {
 .xs-text-size {
     font-size: 14px;
 }
+
 .sm-text-size {
     font-size: 18px;
 }
@@ -67,7 +68,13 @@ h1,h2,h3,h4,h5,h6,p {
 .dark-2-font {
     color: #000000;
 }
+.gray-font {
+    color: #667085;
+}
 
+.bg-yellow {
+    background-color: #F2BB32;
+}
 .bg-white {
     background-color: #FCFCFC;
 }
@@ -99,6 +106,10 @@ h1,h2,h3,h4,h5,h6,p {
     width: fit-content;
 }
 
+.flex {
+    display: flex;
+}
+
 .flex-center {
     display: flex;
     align-items: center;
@@ -119,6 +130,51 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 /* Generic stuff */
+
+/* Faq stuff */
+.faq-container {
+    margin-top: 24px;
+}
+
+.faq-card {
+    width: 788px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.faq-card-content {
+    padding: 24px;
+    width: 720px;
+}
+
+.toggle-text {
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.3s ease, opacity 0.1s ease; 
+    opacity: 0; 
+    margin-top: 10px; 
+    line-height: 30px;
+}
+
+.toggle-text.visible {
+    max-height: 200px; 
+    opacity: 1; 
+}
+
+.toggle-icon {
+    cursor: pointer; 
+    transition: transform 0.1s ease; 
+}
+
+.toggle-header {
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Faq stuff */
+
 
 /* Comments stuff */
 .orange-box {
