@@ -23,7 +23,6 @@ h1,h2,h3,h4,h5,h6,p {
 .xs-text-size {
     font-size: 14px;
 }
-
 .sm-text-size {
     font-size: 18px;
 }
@@ -131,7 +130,35 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Generic stuff */
 
+/* Info stuff */
+
+#semi-lua {
+    position: absolute;
+    width: 919px;
+    height: 459.5px;
+    background-color: #007bff;
+    border-radius: 459.5px 459.5px 0 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: 90px;
+}
+
+/* Estilo da div de baixo */
+.other-info-container {
+    position: relative; /* Permite que a semi-lua seja posicionada em relação a ela */
+    z-index: 2; /* Coloca a div de baixo na frente da semi-lua */
+}
+
+/* Info stuff */
+
 /* Faq stuff */
+
+#faq {
+    position: relative;
+    z-index: 3;
+}
+
 .faq-container {
     margin-top: 24px;
 }

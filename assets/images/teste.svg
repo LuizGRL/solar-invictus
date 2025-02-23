@@ -1,0 +1,11 @@
+                <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define a máscara para cortar a parte inferior do círculo -->
+    <defs>
+        <mask id="meia-lua-mask">
+            <rect x="0" y="0" width="200" height="100" fill="white" />
+            <rect x="0" y="100" width="200" height="100" fill="black" />
+        </mask>
+    </defs>
+    <!-- Círculo que será cortado para formar a meia-lua -->
+    <circle cx="100" cy="100" r="100" fill="#007bff" mask="url(#meia-lua-mask)" />
+</svg>
