@@ -11,83 +11,126 @@
 </head>
 <body>
     <section id="about" class="flex flex-column" style="padding: 122px 90px; padding-bottom: 0px"> 
-        <div class="flex">
-            <div class="infos-container">
+        <div class="flex" style="justify-content: space-between;">
+            <div class="infos-container" style="max-width: 700px;">
                 <div class="info-card">
-                    <div class="info-header">
-                        <h3>Geração da Energia</h3>
+                    <div class="grid-container">
+                        <img src="assets/images/info-icons/lamp-icon.svg" class="grid-image">
+                        <div>
+                            <h3 class="grid-title">Geração da Energia</h3>
+                            <p style="margin-top: 18px;" class="grid-title">A energia é gerada nas Usinas Fotovoltaicas que a Sol Invictus contrata e é injetada na rede da Concessionária local</p>
+                        </div>
                     </div>
-                    <p>A energia é gerada nas Usinas Fotovoltaicas que a Sol Invictus contrata e é injetada na rede da Concessionária local</p>
                 </div>
                 <div class="info-card">
-                    <div class="info-header">
-                        <h3>Geração da Energia</h3>
+                    <div class="grid-container">
+                        <img src="assets/images/info-icons/signs.svg" class="grid-image">
+                        <div>
+                            <h3 class="grid-title">Distribuição</h3>
+                            <p style="margin-top: 18px;" class="grid-title">A Concessionária distribuidora de energia entrega uma parte da energia que recebeu no seu ponto de consumo, ou seja na sua casa, como já o faz habitualmente</p>
+                        </div>
                     </div>
-                    <p>A energia é gerada nas Usinas Fotovoltaicas que a Sol Invictus contrata e é injetada na rede da Concessionária local</p>
                 </div>
                 <div class="info-card">
-                    <div class="info-header">
-                        <h3>Geração da Energia</h3>
+                    <div class="grid-container">
+                        <img src="assets/images/info-icons/money.svg" class="grid-image">
+                        <div>
+                            <h3 class="grid-title">Faturamento Concessionária</h3>
+                            <p style="margin-top: 18px;" class="grid-title">Quando a concessionária emite a sua fatura de energia ela abate os créditos que você contratou junto à Sol Invictus</p>
+                        </div>
                     </div>
-                    <p>A energia é gerada nas Usinas Fotovoltaicas que a Sol Invictus contrata e é injetada na rede da Concessionária local</p>
                 </div>
                 <div class="info-card">
-                    <div class="info-header">
-                        <h3>Geração da Energia</h3>
+                    <div class="grid-container">
+                        <img src="assets/images/info-icons/coins.svg" class="grid-image">
+                        <div>
+                            <h3 class="grid-title">Faturamento Sol Invictus</h3>
+                            <p style="margin-top: 18px;" class="grid-title">Pelos créditos que você recebeu na fatura da concessionária você pagará para a Cooperativa Sol Invictus com um desconto conforme o plano que você contratou conosco.</p>
+                        </div>
                     </div>
-                    <p>A energia é gerada nas Usinas Fotovoltaicas que a Sol Invictus contrata e é injetada na rede da Concessionária local</p>
                 </div>
             </div>
-            <div class="form">
-                <form>
-                    <div class="form-group">
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            <div class="card-stack">
+                <div class="card main-card">
+                    <div class="form flex flex-column flex-center">
+                        <h1 style="width: 256px;">Quer pagar menos em sua conta de luz?</h1>
+                        <p style="margin-top: 10px;">Preencha o formulário abaixo e aproveite os descontos!</p>
+                        <form style="margin-top: 20px;">
+                            <div class="flex" style="gap: 19px">
+                                <div class="form-group flex flex-column">
+                                    <label for="nome" class="form-group-label">Nome Completo</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                                </div>
+                                <div class="form-group flex flex-column">
+                                    <label for="telefone" class="form-group-label">Telefone</label>
+                                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}">
+                                </div>
+                            </div>
+                            <div class="form-group flex flex-column">
+                                <label for="email" class="form-group-label">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                            </div>
+                            <div class="form-group flex flex-column">
+                                <label class="form-group-label">Selecione</label>
+                                <div class="wrapper-dropdown" id="myDropdown">
+                                    <span>Browsers</span>
+                                    <ul class="dropdown">
+                                    <li>Chrome</li>
+                                    <li>Firefox</li>
+                                    <li>Safari</li>
+                                    <li>Opera</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-group-label">Seu Documento CNH ou Identidade</label>
+                                <div class="file-input-container">
+                                    <input type="file" id="file-input-1" class="file-input"  onchange="updatePlaceholder()" style="max-height: 43px;">
+                                    <label for="file-input-1"  id="file-label-1" class="custom-file-button">Escolher arquivo</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-group-label">Suas(s) fatura(s) de energia</label>
+                                <div class="file-input-container">
+                                    <input type="file" id="file-input-2" class="file-input"  onchange="updatePlaceholder() " style="max-height: 43px;">
+                                    <label for="file-input-2" id="file-label-2" class="custom-file-button">Escolher arquivo</label>
+                                </div>
+                            </div>
+                            <div class="form-group flex">
+                                <div class="submit-button-container">
+                                <button type="submit" class="submit-button flex">
+                                    <p>Realizar inscrição</p>
+                                    <img src="assets/images/info-icons/arrow-right-02.png">
+                                </button>
+                                </div>
+                            </div>
+                        </form>
+                        <p style="margin-top: 15px; color: #7B8B99">Ao clicar no botão, nossa equipe analisará as informações enviadas e dará sequência ao seu processo de inscrição.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}">
-                        <small>Formato: (99) 99999-9999</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="fatura">Fatura de Energia:</label>
-                        <input type="file" id="fatura" name="fatura" accept=".pdf,.jpg,.png" required>
-                        <small>Aceitamos arquivos PDF, JPG ou PNG.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="fatura">Fatura de Energia:</label>
-                        <input type="file" id="fatura" name="fatura" accept=".pdf,.jpg,.png" required>
-                        <small>Aceitamos arquivos PDF, JPG ou PNG.</small>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+              </div>
         </div>
         </div>
-        <div class="other-info-container bg-purple" style="padding: 80px 320px; padding-bottom: 0px">
-            <div id="semi-lua" class="semi-lua-horizontal"></div>
-            <h1 style="margin-bottom: 184px; z-index:3; position: relative">Reduza até 15% na sua conta de energia e invista no futuro da sua casa ou empresa com energia solar!</h1>
-            <div class="num-cards-container flex" style="z-index:3; position: relative; gap: 69px">
+        <div class="other-info-container bg-purple flex flex-column" style="padding: 80px 320px; padding-bottom: 0px">
+            <img class="semi-lua" src="assets/images/teste.svg">
+            <h1 class="text-center" style="margin-bottom: 184px; z-index:3; position: relative">Reduza até 15% na sua conta de energia e invista no futuro da sua casa ou empresa com energia solar!</h1>
+            <div class="num-cards-container flex text-center self-center">
                 <div class="num-card">
                     <h3 class="xl-text-size">86</h3>
                     <p style="font-size:16px">Cooperados</p>
                 </div>
                 <div class="num-card">
-                    <h3 class="xl-text-size">86</h3>
+                    <h3 class="xl-text-size">12</h3>
                     <p style="font-size:16px">Usinas</p>
                 </div>
                 <div class="num-card">
-                    <h3 class="xl-text-size">86</h3>
+                    <h3 class="xl-text-size">35</h3>
                     <p style="font-size:16px">Geração (Megawats/mês)</p>
                 </div>
                 <div class="num-card">
-                    <h3 class="xl-text-size">86</h3>
+                    <h3 class="xl-text-size">22.560</h3>
                     <p style="font-size:16px">Descontos Concedidos em 2022 (R$)</p>
                 </div>
             </div>
@@ -285,6 +328,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/hide-text.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </body>
 </html>
