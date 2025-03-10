@@ -70,6 +70,9 @@ h1,h2,h3,h4,h5,h6,p {
 .gray-font {
     color: #667085;
 }
+.purple-font {
+    color: #762BDB;
+}
 
 .bg-yellow {
     background-color: #F2BB32;
@@ -137,6 +140,59 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 /* Generic stuff */
+
+/* Plans stuff */
+.plan-card {
+    margin-bottom: 80px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.plan-card h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.plan-card img{
+    width: 14px; 
+    height: 24px; 
+    margin-top: 7px; 
+    margin-right: 3px;
+}
+
+.plan-button-1{
+    font-weight: bold;
+    font-size: 16px;
+    color: #6727BD;
+    padding: 13px 59px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #762BDB;
+
+}
+.plan-button-2{
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 13px 59px;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: #762BDB;
+    border-color: #762BDB;
+
+}
+.enterprise-info{
+    color: #FAC527;
+    font-weight: 600;
+    background-color: #762BDB;
+    border-radius: 24px ;
+    padding: 5px 5px;
+    margin-top: 20px ;
+    margin-bottom: 29px;
+}
+/* Plans stuff */
 
 /* Info stuff */
 .submit-button-container {
