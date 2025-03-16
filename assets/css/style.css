@@ -138,8 +138,97 @@ h1,h2,h3,h4,h5,h6,p {
 .justify-self-end {
     justify-self: end;
 }
-
 /* Generic stuff */
+
+/* Enterprise info stuff */
+.icons-enterprise-info-container {
+    margin: 0px 93px;
+}
+
+.enterprise-image {
+    width: fit-content;
+    padding: 19px;
+    height: fit-content;
+    background-color: #762BDB;
+    border-radius: 19px;
+    margin-right: 19px;
+}
+
+.enterprise-info-text{
+    margin-right: 25px;
+}
+
+.enterprise-info-text h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    line-height: 174%;
+
+}
+
+.enterprise-info-text p {
+    font-weight: 400;
+    color: #969696;
+    font-size: 15px;
+    line-height: 135%;
+}
+
+.enterprise-info-text-container {
+    margin-top: 164px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 793px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+.enterprise-info-text-container h1{
+    font-weight: 600;
+    color: #F2BB32;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.enterprise-info-text-container p{
+    font-weight: 400;
+    color: #868686;
+    font-size: 20px;
+    line-height: 175%;
+}
+.enterprise-info-container {
+    margin: 0px 120px;
+}
+.enterprise-info-options {
+    font-size: 48px;
+    background-color: #FAC527;
+    width: 58px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.enterprise-info-options p{
+    width: fit-content;
+}
+
+.enterprise-info-description{
+    color: #7A7A7A;
+    line-height: 135%;
+    font-weight: 600;
+    font-size: 30px;
+    max-width: 540px;
+    text-align: justify;
+
+}
+/* Enterprise info stuff */
+
 
 /* Plans stuff */
 .plan-card {
@@ -183,7 +272,7 @@ h1,h2,h3,h4,h5,h6,p {
     border-color: #762BDB;
 
 }
-.enterprise-info{
+.enterprise-info-stamp{
     color: #FAC527;
     font-weight: 600;
     background-color: #762BDB;
