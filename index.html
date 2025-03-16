@@ -10,18 +10,18 @@
 
 </head>
 <body>
-    <section class="bg-purple full-screen "> 
+    <section id="home" class="bg-purple full-screen "> 
         <header>
             <div id="brand">            
                 <img src="./assets/images/footer-icon.svg">
             </div>
             <nav>
               <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/products">Como funciona</a></li>
-                <li><a href="/about">Serviços</a></li>
-                <li><a href="/products">Planos</a></li>
-                <li><a href="/about">Economizar agora</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#info" class="nav-link">Como funciona</a></li>
+                <li><a href="#plans"  class="nav-link">Serviços</a></li>
+                <li><a href="#plans"  class="nav-link">Planos</a></li>
+                <li><a href="#about"  class="nav-link">Economizar agora</a></li>
               </ul>
             </nav>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -59,7 +59,7 @@
 
         </div>
     </section>
-    <section style="margin: 50px 0px">
+    <section id="info" style="margin: 50px 0px">
         <div class="icons-enterprise-info-container flex" style="align-items: center;">
             <div class="enterprise-info flex" style="align-items: center;">
                 <div class="enterprise-image flex flex-center">
@@ -143,7 +143,7 @@
             </div>
         </div>
     </section>
-    <section class="flex bg-purple flex-column" style="align-items: center;">
+    <section id="plans" class="flex bg-purple flex-column" style="align-items: center;">
         <h1 class="md-bold yellow-font" style="font-size: 40px; margin-top: 30px">Nossos Planos</h1>
         <p class="white-font" style="max-width: 475px; font-weight: 500; font-size: 20px; margin-top:20px; margin-bottom: 82px">Escolha o plano de descontos ideal para o seu perfil de consumo e aproveite os benefícios!</p>
         <div class="plan-cards-container flex" style="gap: 37px;">
@@ -497,6 +497,7 @@
     <script src="assets/js/hide-text.js"></script>
     <script src="assets/js/form.js"></script>
     <script src="assets/js/nav-bar.js"></script>
+    <script src="assets/js/scroll.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
