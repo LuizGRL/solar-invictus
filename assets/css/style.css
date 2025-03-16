@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 /* Generic stuff */
 @font-face {
@@ -7,6 +8,7 @@
 
 *{
     font-family: Inter;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -139,6 +141,189 @@ h1,h2,h3,h4,h5,h6,p {
     justify-self: end;
 }
 /* Generic stuff */
+
+/* Home */
+.home-content {
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translateY( -50%);
+
+}
+.home-text-container{
+    width: 100%;
+    margin: 0px 93px;
+    margin-bottom: 5%;
+
+}
+
+.home-buttons-container{
+    margin-top: 30px;
+}
+
+.home-button-1 {
+    padding: 9px 58px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F2BB32;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 204%;
+    margin-right: 15px;
+}
+
+.home-button-2 {
+    padding: 9px 58px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #F2BB32;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 204%;
+    margin-right: 15px;
+}
+
+
+.home-title {
+    max-width: 637px;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+.home-subtitle {
+    line-height: 173%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    max-width: 613px;
+}
+
+.luz {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 80px;
+    margin-top: 80px;
+    border-radius: 50%; 
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.8); /
+  }
+
+/* Home - NAVBAR */
+
+  header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #C4C4C4 solid 1px ;
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+    color: #09c372;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul a {
+    color: white;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+ 
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobile-menu {
+    margin-top: 27px;    
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #333;
+        z-index: 1001; 
+    }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+  }
+
+/* Home - NAVBAR */
+
+/* Home */
 
 /* Enterprise info stuff */
 .icons-enterprise-info-container {
